@@ -1,20 +1,29 @@
 ## How to Setup Project 
 🔐 Environment Variables
+
 📁 Backend → backend/.env
 
 **DATABASE_URL**=your_postgres_database_url
-**SESSION_SECRET**=your_session_secret
 
-DATABASE_URL=postgresql://user:password@host:5432/dbname
-SESSION_SECRET=mysecret123
+📁 Backend → backend/src/database
+
+**DATABASE_URL**=your_postgres_database_url
 
 📁 Frontend → frontend/.env
 
 **VITE_BACKEND_URL**=http://localhost:8080
 
-How to Start the Project
+## How to Start the Project
 
-Start Backend
+**Migrate Database**
+cd backend/src/db
+npx drizzle-kit generate
+npx drizzle-kit migrate
+npx drizzle-kit push
+
+
+
+**Start Backend**
 
 cd backend
 npm install
@@ -24,7 +33,7 @@ Backend runs on:
 
 http://localhost:8080
 
-Start Frontend
+**Start Frontend**
 
 cd frontend
 npm install
@@ -87,6 +96,7 @@ There are only two reasons why startups fail its either bad idea or poor impleme
 To keep team updated we need to give report to our seniors what features build and needed to build like in this assignment I asked should I do it in Monorepo or 3 Folder but I keep it to Two Folder and one Commonly used file I uploaded it to NPM so that frontend and backend can access it 
 
 Initially we should deploy in into a serverless backend because it is cost effective and when it scaled we use constant server approach
+
 
 
 
