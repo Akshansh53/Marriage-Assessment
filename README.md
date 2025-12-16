@@ -16,9 +16,13 @@
 ## How to Start the Project
 
 **Migrate Database**
+
 cd backend/src/db
+
 npx drizzle-kit generate
+
 npx drizzle-kit migrate
+
 npx drizzle-kit push
 
 
@@ -48,6 +52,8 @@ http://localhost:5173
 ## Approach & Decisions
 
 Node.js + Express for a simple backend
+
+Common folder is just for show what is inside @anshverma53/marriage-assessment NPM Package 
 
 Passport (cookie-based auth) for authentication as told in assessment but personally I feel next-auth is pretty simple because the passport have a complex Documentation 
 
@@ -132,3 +138,4 @@ Keep the old logic during deployment.
 If issues occur, switch back to the previous version.
 
 Restore from database records if needed.
+
