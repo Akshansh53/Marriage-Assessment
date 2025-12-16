@@ -1,0 +1,21 @@
+{
+  "name": "@anshverma53/marriage-common",
+  "version": "1.0.2",
+  "description": "A description of your package",
+  "main": "dist/index.js",        
+  "types": "dist/index.d.ts",      
+  "scripts": {
+    "build": "npx tsc",          
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist"                      
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+     "zod": "^4.1.13"
+  }
+}
