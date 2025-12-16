@@ -98,5 +98,37 @@ To keep team updated we need to give report to our seniors what features build a
 Initially we should deploy in into a serverless backend because it is cost effective and when it scaled we use constant server approach
 
 
+## Advanced Section 
+**Production Risks / Gotchas**
+
+Some possible risks I noticed:
+Right Now there is a Bug in React Library through which we access server The Developer are on to it but its a risk so keep updated with technologies you use
+
+No Proper Error Handing
+
+No Rate Limiting so Burpsuite Attack is Possible
 
 
+**Migration Plan**
+
+1. Start uploading new images to Cloudinary or S3.
+2. Write a simple script to upload existing images to the cloud.
+3. Update database records with new image URLs.
+4. After verification, remove old disk images.
+
+**Monitoring & Rollback**
+
+**Monitoring""
+
+Check Logs upload errors and failures.
+
+Monitor API response times and upload success rates.
+
+
+**Rollback**
+
+Keep the old logic during deployment.
+
+If issues occur, switch back to the previous version.
+
+Restore from database records if needed.
